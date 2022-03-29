@@ -1,0 +1,15 @@
+[MESSAGES CONTROL]
+
+disable=missing-module-docstring,
+        missing-class-docstring,
+        missing-function-docstring,
+        non-ascii-name,
+
+[BASIC]
+
+good-names=i,
+           j,
+           k,
+           ax,
+           N,
+           _

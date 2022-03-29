@@ -1,0 +1,4 @@
+matplotlib
+microsoft-bonsai-api
+python-dotenv
+simpy

@@ -1,0 +1,77 @@
+{
+    "name": "Hospital",
+    "timeout": 60,
+    "description": {
+        "config": {
+            "category": "Struct",
+            "fields": [
+                {
+                    "name": "initial_beds",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Initial number of beds."
+                    }
+                },
+                {
+                    "name": "initial_patients",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Initial number of patients."
+                    }
+                }
+            ]
+        },
+        "action": {
+            "category": "Struct",
+            "fields": [
+                {
+                    "name": "change_beds",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Number of beds to add or subtract per day."
+                    }
+                }
+            ]
+        },
+        "state": {
+            "category": "Struct",
+            "fields": [
+                {
+                    "name": "simulation_time",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Time stamp (used for demo plots)."
+                    }
+                },
+                {
+                    "name": "num_beds",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Total number of beds."
+                    }
+                },
+                {
+                    "name": "num_patients",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Number of patients currently receiving care."
+                    }
+                },
+                {
+                    "name": "num_patients_overflow",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Number of patients not admitted because there were no beds available."
+                    }
+                },
+                {
+                    "name": "utilization",
+                    "type": {
+                        "category": "Number",
+                        "comment": "Utilization, defined as the number of patients divided by the number of beds."
+                    }
+                }
+            ]
+        }
+    }
+}
