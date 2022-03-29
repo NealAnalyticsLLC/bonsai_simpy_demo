@@ -1,0 +1,14 @@
+**/.dockerignore
+
+**/.git
+**/.gitignore
+
+**/.vscode
+
+**/__pycache__
+**/*.egg-info
+
+**/docs
+env.yaml
+README.md
+template.env
